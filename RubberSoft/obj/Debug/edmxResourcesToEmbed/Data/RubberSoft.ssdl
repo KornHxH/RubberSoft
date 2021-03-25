@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RubberSoftModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="rpt_BuyByDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="EndDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_BuyByDate_2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="EndDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_BuyByMonth" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_BuyByMonth_2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_BuyByYear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_BuyByYear_2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_BuyWeightBalance_ByDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="EndDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="rpt_BuyWeightBalance_ByMonth" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="rpt_BuyWeightBalance_ByYear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="rpt_SaleByDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="EndDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_SaleByDate_1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="EndDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_SaleByDate_2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="EndDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_SaleByMonth" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_SaleByMonth_1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_SaleByMonth_2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_SaleByYear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_SaleByYear_1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="rpt_SaleByYear_2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddBuy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BuyNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="BuyDate" Type="datetime" Mode="In" />
+    <Parameter Name="BeginBalance" Type="money" Mode="In" />
+    <Parameter Name="SubTotal" Type="money" Mode="In" />
+    <Parameter Name="DownValue" Type="money" Mode="In" />
+    <Parameter Name="NetTotal" Type="money" Mode="In" />
+    <Parameter Name="SetOffValue" Type="money" Mode="In" />
+    <Parameter Name="ValueBalance" Type="money" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+    <Parameter Name="ProductUsing" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsFinalze" Type="bit" Mode="In" />
+    <Parameter Name="InsertBy" Type="int" Mode="In" />
+    <Parameter Name="TerminnalId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddBuyProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BuyId" Type="int" Mode="In" />
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="ItemPriceId" Type="int" Mode="In" />
+    <Parameter Name="PriceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Percentage" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Plate" Type="money" Mode="In" />
+    <Parameter Name="Drc" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Smoke" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Raw" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Raw" Type="money" Mode="In" />
+    <Parameter Name="CalRubber" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice" Type="money" Mode="In" />
+    <Parameter Name="Remark" Type="nvarchar" Mode="In" />
+    <Parameter Name="InsertBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddConsignment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BuyNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="BuyDate" Type="datetime" Mode="In" />
+    <Parameter Name="SubTotal" Type="money" Mode="In" />
+    <Parameter Name="DownValue" Type="money" Mode="In" />
+    <Parameter Name="NetTotal" Type="money" Mode="In" />
+    <Parameter Name="SetOffValue" Type="money" Mode="In" />
+    <Parameter Name="ValueBalance" Type="money" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+    <Parameter Name="ProductUsing" Type="nvarchar" Mode="In" />
+    <Parameter Name="InsertBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddConsignmentProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ConsignmentId" Type="int" Mode="In" />
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="ItemPriceId" Type="int" Mode="In" />
+    <Parameter Name="PriceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Percentage" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Plate" Type="money" Mode="In" />
+    <Parameter Name="Drc" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Smoke" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Raw" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Raw" Type="money" Mode="In" />
+    <Parameter Name="CalRubber" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice" Type="money" Mode="In" />
+    <Parameter Name="Remark" Type="nvarchar" Mode="In" />
+    <Parameter Name="InsertBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddCustomer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerTypeId" Type="int" Mode="In" />
+    <Parameter Name="CustomerGroupId" Type="int" Mode="In" />
+    <Parameter Name="CustomerCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="LicensePlate" Type="nvarchar" Mode="In" />
+    <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsDefault" Type="bit" Mode="In" />
+    <Parameter Name="InsertBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddCustomerPrice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PriceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="SaleDate" Type="datetime" Mode="In" />
+    <Parameter Name="SalePriceAdvance" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount" Type="float" Mode="In" />
+    <Parameter Name="DeliveryPrice" Type="money" Mode="In" />
+    <Parameter Name="IsDefault" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spt_AddCustomerTypes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerTypeName" Type="nvarchar" Mode="In" />
+    <Parameter Name="InsertBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LogTypeId" Type="int" Mode="In" />
+    <Parameter Name="LogName" Type="nvarchar" Mode="In" />
+    <Parameter Name="LogDetail" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="IPMachine" Type="nvarchar" Mode="In" />
+    <Parameter Name="MachineName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="spt_AddOption" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TerminalId" Type="int" Mode="In" />
+    <Parameter Name="TerminalName" Type="nvarchar" Mode="In" />
+    <Parameter Name="OptionName" Type="nvarchar" Mode="In" />
+    <Parameter Name="OptionValue" Type="nvarchar" Mode="In" />
+    <Parameter Name="DateValue" Type="date" Mode="In" />
+    <Parameter Name="TimeValue" Type="time" Mode="In" />
+  </Function>
+  <Function Name="spt_AddOutStandingBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="BeginDebt" Type="money" Mode="In" />
+    <Parameter Name="OutstandingDebt" Type="money" Mode="In" />
+    <Parameter Name="LastLogId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddOutStandingLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="BeginOutstandingDebt" Type="money" Mode="In" />
+    <Parameter Name="OutstandingDebt" Type="money" Mode="In" />
+    <Parameter Name="RefId" Type="int" Mode="In" />
+    <Parameter Name="OutStandingStatus" Type="int" Mode="In" />
+    <Parameter Name="LogTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddSale" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SaleNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SaleDate" Type="datetime" Mode="In" />
+    <Parameter Name="BeginBalance" Type="money" Mode="In" />
+    <Parameter Name="SubTotal" Type="money" Mode="In" />
+    <Parameter Name="DownValue" Type="money" Mode="In" />
+    <Parameter Name="NetTotal" Type="money" Mode="In" />
+    <Parameter Name="SetOffValue" Type="money" Mode="In" />
+    <Parameter Name="ValueBalance" Type="money" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+    <Parameter Name="IsFinalze" Type="bit" Mode="In" />
+    <Parameter Name="InsertBy" Type="int" Mode="In" />
+    <Parameter Name="TerminnalId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddSaleProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SaleId" Type="int" Mode="In" />
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="ItemPriceId" Type="int" Mode="In" />
+    <Parameter Name="PriceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Percentage" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Plate" Type="money" Mode="In" />
+    <Parameter Name="Drc" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Smoke" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Raw" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Raw" Type="money" Mode="In" />
+    <Parameter Name="CalRubber" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice" Type="money" Mode="In" />
+    <Parameter Name="Remark" Type="nvarchar" Mode="In" />
+    <Parameter Name="InsertBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddSaveBuy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BuyNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="BuyDate" Type="datetime" Mode="In" />
+    <Parameter Name="SubTotal" Type="money" Mode="In" />
+    <Parameter Name="DownValue" Type="money" Mode="In" />
+    <Parameter Name="NetTotal" Type="money" Mode="In" />
+    <Parameter Name="SetOffValue" Type="money" Mode="In" />
+    <Parameter Name="ValueBalance" Type="money" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+    <Parameter Name="ProductUsing" Type="nvarchar" Mode="In" />
+    <Parameter Name="InsertBy" Type="int" Mode="In" />
+    <Parameter Name="TypeSave" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddSaveBuyProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BuyId" Type="int" Mode="In" />
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="ItemPriceId" Type="int" Mode="In" />
+    <Parameter Name="PriceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Percentage" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Plate" Type="money" Mode="In" />
+    <Parameter Name="Drc" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Smoke" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Raw" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Raw" Type="money" Mode="In" />
+    <Parameter Name="CalRubber" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice" Type="money" Mode="In" />
+    <Parameter Name="Remark" Type="nvarchar" Mode="In" />
+    <Parameter Name="InsertBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddSaveSale" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SaleNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SaleDate" Type="datetime" Mode="In" />
+    <Parameter Name="SubTotal" Type="money" Mode="In" />
+    <Parameter Name="DownValue" Type="money" Mode="In" />
+    <Parameter Name="NetTotal" Type="money" Mode="In" />
+    <Parameter Name="SetOffValue" Type="money" Mode="In" />
+    <Parameter Name="ValueBalance" Type="money" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+    <Parameter Name="ProductUsing" Type="nvarchar" Mode="In" />
+    <Parameter Name="InsertBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddSaveSaleProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SaleId" Type="int" Mode="In" />
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="ItemPriceId" Type="int" Mode="In" />
+    <Parameter Name="PriceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Percentage" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Plate" Type="money" Mode="In" />
+    <Parameter Name="Drc" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Smoke" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Raw" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Raw" Type="money" Mode="In" />
+    <Parameter Name="CalRubber" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice" Type="money" Mode="In" />
+    <Parameter Name="Remark" Type="nvarchar" Mode="In" />
+    <Parameter Name="InsertBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddTerminal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TerminalName" Type="nvarchar" Mode="In" />
+    <Parameter Name="IPMachine" Type="nvarchar" Mode="In" />
+    <Parameter Name="MachineName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Active" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spt_AddTransactionLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="BeginAmt" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Raw" Type="money" Mode="In" />
+    <Parameter Name="WeightBalanceAmt" Type="money" Mode="In" />
+    <Parameter Name="RefId" Type="int" Mode="In" />
+    <Parameter Name="LogTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_AddUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserTypeId" Type="int" Mode="In" />
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Password" Type="nvarchar" Mode="In" />
+    <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+    <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Active" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spt_AddWeightBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="BeginBalanceAmt" Type="money" Mode="In" />
+    <Parameter Name="WeightBalanceAmt" Type="money" Mode="In" />
+    <Parameter Name="LastLogId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_DeleteCustomer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="DeleteBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_DeleteCustomerPrice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_GetBuy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetBuyBill" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BuyId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_GetBuyNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BuyDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="spt_GetBuyProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Active" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spt_GetBuyWeightBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_GetConsignment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetConsignmentNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BuyDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="spt_GetConsignmentProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Active" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spt_GetCustomer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetCustomerPrice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetCustomerTypes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetLogDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetOptions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetOutStandingBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetOutStandingLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetRoles" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetSale" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetSaleNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SaleDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="spt_GetSaleProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Active" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spt_GetSaleWeightBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_GetSaveBuy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetSaveBuyNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BuyDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="spt_GetSaveBuyProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Active" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spt_GetSaveSale" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetSaveSaleNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SaleDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="spt_GetSaveSaleProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Active" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spt_GetTerminal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetTransactionLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_GetWeightBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spt_UpdateBuy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BuyId" Type="int" Mode="In" />
+    <Parameter Name="BuyNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="BuyDate" Type="datetime" Mode="In" />
+    <Parameter Name="BeginBalance" Type="money" Mode="In" />
+    <Parameter Name="SubTotal" Type="money" Mode="In" />
+    <Parameter Name="DownValue" Type="money" Mode="In" />
+    <Parameter Name="NetTotal" Type="money" Mode="In" />
+    <Parameter Name="SetOffValue" Type="money" Mode="In" />
+    <Parameter Name="ValueBalance" Type="money" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+    <Parameter Name="ProductUsing" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsFinalze" Type="bit" Mode="In" />
+    <Parameter Name="UpdateBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateBuyProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BuyProductId" Type="int" Mode="In" />
+    <Parameter Name="BuyId" Type="int" Mode="In" />
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="ItemPriceId" Type="int" Mode="In" />
+    <Parameter Name="PriceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Percentage" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Plate" Type="money" Mode="In" />
+    <Parameter Name="Drc" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Smoke" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Raw" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Raw" Type="money" Mode="In" />
+    <Parameter Name="CalRubber" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice" Type="money" Mode="In" />
+    <Parameter Name="Remark" Type="nvarchar" Mode="In" />
+    <Parameter Name="UpdateBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateConsignment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ConsignmentId" Type="int" Mode="In" />
+    <Parameter Name="BuyNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="BuyDate" Type="datetime" Mode="In" />
+    <Parameter Name="SubTotal" Type="money" Mode="In" />
+    <Parameter Name="DownValue" Type="money" Mode="In" />
+    <Parameter Name="NetTotal" Type="money" Mode="In" />
+    <Parameter Name="SetOffValue" Type="money" Mode="In" />
+    <Parameter Name="ValueBalance" Type="money" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+    <Parameter Name="ProductUsing" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateConsignmentProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ConsignmentProductId" Type="int" Mode="In" />
+    <Parameter Name="ConsignmentId" Type="int" Mode="In" />
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="ItemPriceId" Type="int" Mode="In" />
+    <Parameter Name="PriceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Percentage" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Plate" Type="money" Mode="In" />
+    <Parameter Name="Drc" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Smoke" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Raw" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Raw" Type="money" Mode="In" />
+    <Parameter Name="CalRubber" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice" Type="money" Mode="In" />
+    <Parameter Name="Remark" Type="nvarchar" Mode="In" />
+    <Parameter Name="UpdateBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateCustomer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="CustomerTypeId" Type="int" Mode="In" />
+    <Parameter Name="CustomerGroupId" Type="int" Mode="In" />
+    <Parameter Name="CustomerCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="LicensePlate" Type="nvarchar" Mode="In" />
+    <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsDefault" Type="bit" Mode="In" />
+    <Parameter Name="UpdateBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateCustomerPrice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="PriceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="SaleDate" Type="datetime" Mode="In" />
+    <Parameter Name="SalePriceAdvance" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount" Type="float" Mode="In" />
+    <Parameter Name="DeliveryPrice" Type="money" Mode="In" />
+    <Parameter Name="IsDefault" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateCustomerTypes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerTypeId" Type="int" Mode="In" />
+    <Parameter Name="CustomerTypeName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UpdateBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateOptions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OptionID" Type="int" Mode="In" />
+    <Parameter Name="TerminalId" Type="int" Mode="In" />
+    <Parameter Name="TerminalName" Type="nvarchar" Mode="In" />
+    <Parameter Name="OptionName" Type="nvarchar" Mode="In" />
+    <Parameter Name="OptionValue" Type="nvarchar" Mode="In" />
+    <Parameter Name="DateValue" Type="date" Mode="In" />
+    <Parameter Name="TimeValue" Type="time" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateOutStandingBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="BeginDebt" Type="money" Mode="In" />
+    <Parameter Name="OutstandingDebt" Type="money" Mode="In" />
+    <Parameter Name="LastLogId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateSale" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SaleId" Type="int" Mode="In" />
+    <Parameter Name="SaleNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SaleDate" Type="datetime" Mode="In" />
+    <Parameter Name="BeginBalance" Type="money" Mode="In" />
+    <Parameter Name="SubTotal" Type="money" Mode="In" />
+    <Parameter Name="DownValue" Type="money" Mode="In" />
+    <Parameter Name="NetTotal" Type="money" Mode="In" />
+    <Parameter Name="SetOffValue" Type="money" Mode="In" />
+    <Parameter Name="ValueBalance" Type="money" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+    <Parameter Name="IsFinalze" Type="bit" Mode="In" />
+    <Parameter Name="UpdateBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateSaleProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SaleProductId" Type="int" Mode="In" />
+    <Parameter Name="SaleId" Type="int" Mode="In" />
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="ItemPriceId" Type="int" Mode="In" />
+    <Parameter Name="PriceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Percentage" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Plate" Type="money" Mode="In" />
+    <Parameter Name="Drc" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Smoke" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Raw" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Raw" Type="money" Mode="In" />
+    <Parameter Name="CalRubber" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice" Type="money" Mode="In" />
+    <Parameter Name="Remark" Type="nvarchar" Mode="In" />
+    <Parameter Name="UpdateBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateSaveBuy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SaveBuyId" Type="int" Mode="In" />
+    <Parameter Name="BuyNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="BuyDate" Type="datetime" Mode="In" />
+    <Parameter Name="SubTotal" Type="money" Mode="In" />
+    <Parameter Name="DownValue" Type="money" Mode="In" />
+    <Parameter Name="NetTotal" Type="money" Mode="In" />
+    <Parameter Name="SetOffValue" Type="money" Mode="In" />
+    <Parameter Name="ValueBalance" Type="money" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+    <Parameter Name="ProductUsing" Type="nvarchar" Mode="In" />
+    <Parameter Name="TypeSave" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateSaveBuyProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BuyProductId" Type="int" Mode="In" />
+    <Parameter Name="BuyId" Type="int" Mode="In" />
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="ItemPriceId" Type="int" Mode="In" />
+    <Parameter Name="PriceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Percentage" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Plate" Type="money" Mode="In" />
+    <Parameter Name="Drc" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Smoke" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Raw" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Raw" Type="money" Mode="In" />
+    <Parameter Name="CalRubber" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice" Type="money" Mode="In" />
+    <Parameter Name="Remark" Type="nvarchar" Mode="In" />
+    <Parameter Name="UpdateBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateSaveSale" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SaveSaleId" Type="int" Mode="In" />
+    <Parameter Name="SaleNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SaleDate" Type="datetime" Mode="In" />
+    <Parameter Name="SubTotal" Type="money" Mode="In" />
+    <Parameter Name="DownValue" Type="money" Mode="In" />
+    <Parameter Name="NetTotal" Type="money" Mode="In" />
+    <Parameter Name="SetOffValue" Type="money" Mode="In" />
+    <Parameter Name="ValueBalance" Type="money" Mode="In" />
+    <Parameter Name="ProductTypeId" Type="int" Mode="In" />
+    <Parameter Name="ProductUsing" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateSaveSaleProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SaleProductId" Type="int" Mode="In" />
+    <Parameter Name="SaleId" Type="int" Mode="In" />
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="ItemPriceId" Type="int" Mode="In" />
+    <Parameter Name="PriceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Percentage" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Plate" Type="money" Mode="In" />
+    <Parameter Name="Drc" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Smoke" Type="money" Mode="In" />
+    <Parameter Name="WeightAmount_Raw" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice_Raw" Type="money" Mode="In" />
+    <Parameter Name="CalRubber" Type="money" Mode="In" />
+    <Parameter Name="TotalPrice" Type="money" Mode="In" />
+    <Parameter Name="Remark" Type="nvarchar" Mode="In" />
+    <Parameter Name="UpdateBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateTerminal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TerminalId" Type="int" Mode="In" />
+    <Parameter Name="IPMachine" Type="nvarchar" Mode="In" />
+    <Parameter Name="Active" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="UserTypeId" Type="int" Mode="In" />
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Password" Type="nvarchar" Mode="In" />
+    <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+    <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Active" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spt_UpdateWeightBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="PriceId" Type="int" Mode="In" />
+    <Parameter Name="BeginBalanceAmt" Type="money" Mode="In" />
+    <Parameter Name="WeightBalanceAmt" Type="money" Mode="In" />
+    <Parameter Name="LastLogId" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="RubberSoftModelStoreContainer" />
+</Schema>

@@ -1,0 +1,6 @@
+﻿<XtraSerializer version="1.0" application="SplitContainerControl">
+  <property name="CollapsePanel">None</property>
+  <property name="SplitterPosition">1055</property>
+  <property name="Collapsed">false</property>
+  <property name="SerializableRatio">0</property>
+</XtraSerializer>

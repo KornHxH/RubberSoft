@@ -1,0 +1,213 @@
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\RubberSoft.exe.config
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\RubberSoft.exe
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\RubberSoft.pdb
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Data.Desktop.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Data.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.DataAccess.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Printing.v20.1.Core.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Sparkline.v20.1.Core.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Utils.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Utils.v20.1.UI.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraBars.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraEditors.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraGrid.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\EntityFramework.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\EntityFramework.SqlServer.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Xpo.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.CodeParser.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.RichEdit.v20.1.Core.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Office.v20.1.Core.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraTreeList.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraLayout.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraRichEdit.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraVerticalGrid.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraPrinting.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Images.v20.1.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Data.v20.1.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.DataAccess.v20.1.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Printing.v20.1.Core.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Sparkline.v20.1.Core.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Utils.v20.1.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Utils.v20.1.UI.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraBars.v20.1.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraEditors.v20.1.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraGrid.v20.1.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\EntityFramework.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\EntityFramework.SqlServer.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Xpo.v20.1.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.RichEdit.v20.1.Core.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Office.v20.1.Core.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Pdf.v20.1.Core.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.Pdf.v20.1.Drawing.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraTreeList.v20.1.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraLayout.v20.1.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraRichEdit.v20.1.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraVerticalGrid.v20.1.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\DevExpress.XtraPrinting.v20.1.xml
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.Data.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.DataAccess.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.DataAccess.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.DataAccess.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.DataAccess.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.Printing.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.Printing.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.Printing.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.Printing.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.Sparkline.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.Sparkline.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.Sparkline.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.Sparkline.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.Utils.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.Utils.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.Utils.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.Utils.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.Utils.v20.1.UI.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.Utils.v20.1.UI.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.Utils.v20.1.UI.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.Utils.v20.1.UI.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.XtraBars.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.XtraBars.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.XtraBars.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.XtraBars.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.XtraEditors.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.XtraEditors.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.XtraEditors.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.XtraEditors.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.XtraGrid.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.XtraGrid.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.XtraGrid.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.XtraGrid.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.Xpo.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.Xpo.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.Xpo.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.Xpo.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.RichEdit.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.RichEdit.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.RichEdit.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.RichEdit.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.Office.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.Office.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.XtraTreeList.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.XtraTreeList.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.XtraTreeList.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.XtraTreeList.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.XtraLayout.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.XtraLayout.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.XtraLayout.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.XtraLayout.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.XtraRichEdit.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.XtraRichEdit.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.XtraRichEdit.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.XtraRichEdit.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.XtraVerticalGrid.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.XtraVerticalGrid.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.XtraVerticalGrid.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.XtraVerticalGrid.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\de\DevExpress.XtraPrinting.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\es\DevExpress.XtraPrinting.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ja\DevExpress.XtraPrinting.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\bin\Debug\ru\DevExpress.XtraPrinting.v20.1.resources.dll
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.csprojAssemblyReference.cache
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmAddUser.resources
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmBuyLatex.resources
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmByRubber.resources
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmLogin.resources
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.FrmMain.resources
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmSplashScreen.resources
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcAddCustomerPrice.resources
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcCustomerType.resources
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcLoadBuy.resources
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcSelectProduct.resources
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Properties.Resources.resources
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.csproj.GenerateResource.cache
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.exe.licenses
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.csproj.CoreCompileInputs.cache
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.csproj.CopyComplete
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.exe
+D:\My projects\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.pdb
+D:\Project\RubberSoft\Debug\RubberSoft.exe.config
+D:\Project\RubberSoft\Debug\RubberSoft.exe
+D:\Project\RubberSoft\Debug\RubberSoft.pdb
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmAddUser.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmBuyLatex.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmSale.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmLogin.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.FrmMain.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmSplashScreen.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcAddCustomerPrice.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcCustomerType.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcLoadBuy.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcSelectProduct.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Properties.Resources.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.FrmReport.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.RptBuyBill.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.rpt_BuyReport.resources
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.csproj.GenerateResource.cache
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.exe.licenses
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.csproj.CoreCompileInputs.cache
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.csproj.CopyComplete
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.exe
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.pdb
+D:\Project\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.csprojAssemblyReference.cache
+D:\Project\Repos\RubberSoft\Debug\RubberSoft.exe.config
+D:\Project\Repos\RubberSoft\Debug\RubberSoft.exe
+D:\Project\Repos\RubberSoft\Debug\RubberSoft.pdb
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Bill.FrmBill.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmAddUser.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmAuthorized.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmBuyLatex.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmLogin.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.FrmMain.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmPayment.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmSaleLatex.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmSplashScreen.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcAddCustomerPrice.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcCustomerType.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcLoadBuy.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcLoadSale.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcLogin.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcOpenSaveBuy.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcOpenSaveSale.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.UcSelectProduct.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Properties.Resources.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.FrmReport.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.RptBuyBill.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.rptBuyLatex.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.rptCashAdvance.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.Rpt_BuyReport_1.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.RptSaleBill.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.RptSaleBill_1.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.RptBuyBill_1.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.Rpt_BuyReport_2.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.Rpt_BuyWeightBalance.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.Rpt_SaleReport_1.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.Rpt_SaleReport_2.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.Rpt_SaleWeightBalance.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Report.subRptWeightBalance.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Tools.FrmAdjustOutStandingBalance.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Tools.FrmClearData.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Tools.FrmGetBuyData.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Tools.FrmTerminal.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Tools.FrmTools.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.csproj.GenerateResource.cache
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.exe.licenses
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.csproj.CoreCompileInputs.cache
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.csproj.CopyComplete
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.exe
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.pdb
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Tools.FrmOptions.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmAddPrice.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.Main.FrmAddPercent.resources
+D:\Project\Repos\RubberSoft\RubberSoft\RubberSoft\obj\Debug\RubberSoft.csprojAssemblyReference.cache

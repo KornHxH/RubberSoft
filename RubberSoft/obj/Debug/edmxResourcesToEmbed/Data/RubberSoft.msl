@@ -1,0 +1,917 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RubberSoftModelStoreContainer" CdmEntityContainer="RubberSoftEntities">
+    <FunctionImportMapping FunctionImportName="rpt_BuyByDate" FunctionName="RubberSoftModel.Store.rpt_BuyByDate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_BuyByDate_Result">
+          <ScalarProperty Name="BuyId" ColumnName="BuyId" />
+          <ScalarProperty Name="BuyNumber" ColumnName="BuyNumber" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerAddress" ColumnName="CustomerAddress" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="BeginBalance" ColumnName="BeginBalance" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="ProductUsing" ColumnName="ProductUsing" />
+          <ScalarProperty Name="IsFinalze" ColumnName="IsFinalze" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="BuyProductId" ColumnName="BuyProductId" />
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="CalRubber" ColumnName="CalRubber" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_BuyByDate_2" FunctionName="RubberSoftModel.Store.rpt_BuyByDate_2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_BuyByDate_2_Result">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="BuyId" ColumnName="BuyId" />
+          <ScalarProperty Name="BuyNumber" ColumnName="BuyNumber" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_BuyByMonth" FunctionName="RubberSoftModel.Store.rpt_BuyByMonth">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_BuyByMonth_Result">
+          <ScalarProperty Name="BuyId" ColumnName="BuyId" />
+          <ScalarProperty Name="BuyNumber" ColumnName="BuyNumber" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerAddress" ColumnName="CustomerAddress" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="BeginBalance" ColumnName="BeginBalance" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="ProductUsing" ColumnName="ProductUsing" />
+          <ScalarProperty Name="IsFinalze" ColumnName="IsFinalze" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="BuyProductId" ColumnName="BuyProductId" />
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="CalRubber" ColumnName="CalRubber" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_BuyByMonth_2" FunctionName="RubberSoftModel.Store.rpt_BuyByMonth_2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_BuyByMonth_2_Result">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="BuyId" ColumnName="BuyId" />
+          <ScalarProperty Name="BuyNumber" ColumnName="BuyNumber" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_BuyByYear" FunctionName="RubberSoftModel.Store.rpt_BuyByYear">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_BuyByYear_Result">
+          <ScalarProperty Name="BuyId" ColumnName="BuyId" />
+          <ScalarProperty Name="BuyNumber" ColumnName="BuyNumber" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerAddress" ColumnName="CustomerAddress" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="BeginBalance" ColumnName="BeginBalance" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="ProductUsing" ColumnName="ProductUsing" />
+          <ScalarProperty Name="IsFinalze" ColumnName="IsFinalze" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="BuyProductId" ColumnName="BuyProductId" />
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="CalRubber" ColumnName="CalRubber" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_BuyByYear_2" FunctionName="RubberSoftModel.Store.rpt_BuyByYear_2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_BuyByYear_2_Result">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="BuyId" ColumnName="BuyId" />
+          <ScalarProperty Name="BuyNumber" ColumnName="BuyNumber" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_BuyWeightBalance_ByDate" FunctionName="RubberSoftModel.Store.rpt_BuyWeightBalance_ByDate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_BuyWeightBalance_ByDate_Result">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="SalePriceAdvance" ColumnName="SalePriceAdvance" />
+          <ScalarProperty Name="CP_WeightAmount" ColumnName="CP_WeightAmount" />
+          <ScalarProperty Name="BL_WeightBalanceAmt" ColumnName="BL_WeightBalanceAmt" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="WeightBalanceAmt" ColumnName="WeightBalanceAmt" />
+          <ScalarProperty Name="LogName" ColumnName="LogName" />
+          <ScalarProperty Name="BuyNumber" ColumnName="BuyNumber" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_BuyWeightBalance_ByMonth" FunctionName="RubberSoftModel.Store.rpt_BuyWeightBalance_ByMonth">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_BuyWeightBalance_ByMonth_Result">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="SalePriceAdvance" ColumnName="SalePriceAdvance" />
+          <ScalarProperty Name="CP_WeightAmount" ColumnName="CP_WeightAmount" />
+          <ScalarProperty Name="BL_WeightBalanceAmt" ColumnName="BL_WeightBalanceAmt" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="WeightBalanceAmt" ColumnName="WeightBalanceAmt" />
+          <ScalarProperty Name="LogName" ColumnName="LogName" />
+          <ScalarProperty Name="BuyNumber" ColumnName="BuyNumber" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_BuyWeightBalance_ByYear" FunctionName="RubberSoftModel.Store.rpt_BuyWeightBalance_ByYear">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_BuyWeightBalance_ByYear_Result">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="SalePriceAdvance" ColumnName="SalePriceAdvance" />
+          <ScalarProperty Name="CP_WeightAmount" ColumnName="CP_WeightAmount" />
+          <ScalarProperty Name="BL_WeightBalanceAmt" ColumnName="BL_WeightBalanceAmt" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="WeightBalanceAmt" ColumnName="WeightBalanceAmt" />
+          <ScalarProperty Name="LogName" ColumnName="LogName" />
+          <ScalarProperty Name="BuyNumber" ColumnName="BuyNumber" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_SaleByDate" FunctionName="RubberSoftModel.Store.rpt_SaleByDate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_SaleByDate_Result">
+          <ScalarProperty Name="SaleNumber" ColumnName="SaleNumber" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_SaleByDate_1" FunctionName="RubberSoftModel.Store.rpt_SaleByDate_1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_SaleByDate_1_Result">
+          <ScalarProperty Name="SaleNumber" ColumnName="SaleNumber" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_SaleByDate_2" FunctionName="RubberSoftModel.Store.rpt_SaleByDate_2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_SaleByDate_2_Result">
+          <ScalarProperty Name="SaleId" ColumnName="SaleId" />
+          <ScalarProperty Name="SaleNumber" ColumnName="SaleNumber" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="CalRubber" ColumnName="CalRubber" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_SaleByMonth" FunctionName="RubberSoftModel.Store.rpt_SaleByMonth">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_SaleByMonth_Result">
+          <ScalarProperty Name="SaleNumber" ColumnName="SaleNumber" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_SaleByMonth_1" FunctionName="RubberSoftModel.Store.rpt_SaleByMonth_1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_SaleByMonth_1_Result">
+          <ScalarProperty Name="SaleNumber" ColumnName="SaleNumber" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_SaleByMonth_2" FunctionName="RubberSoftModel.Store.rpt_SaleByMonth_2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_SaleByMonth_2_Result">
+          <ScalarProperty Name="SaleNumber" ColumnName="SaleNumber" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="CalRubber" ColumnName="CalRubber" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_SaleByYear" FunctionName="RubberSoftModel.Store.rpt_SaleByYear">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_SaleByYear_Result">
+          <ScalarProperty Name="SaleNumber" ColumnName="SaleNumber" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_SaleByYear_1" FunctionName="RubberSoftModel.Store.rpt_SaleByYear_1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_SaleByYear_1_Result">
+          <ScalarProperty Name="SaleNumber" ColumnName="SaleNumber" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="rpt_SaleByYear_2" FunctionName="RubberSoftModel.Store.rpt_SaleByYear_2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.rpt_SaleByYear_2_Result">
+          <ScalarProperty Name="SaleNumber" ColumnName="SaleNumber" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="CalRubber" ColumnName="CalRubber" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_AddBuy" FunctionName="RubberSoftModel.Store.spt_AddBuy" />
+    <FunctionImportMapping FunctionImportName="spt_AddBuyProduct" FunctionName="RubberSoftModel.Store.spt_AddBuyProduct" />
+    <FunctionImportMapping FunctionImportName="spt_AddCustomer" FunctionName="RubberSoftModel.Store.spt_AddCustomer" />
+    <FunctionImportMapping FunctionImportName="spt_AddCustomerPrice" FunctionName="RubberSoftModel.Store.spt_AddCustomerPrice" />
+    <FunctionImportMapping FunctionImportName="spt_AddCustomerTypes" FunctionName="RubberSoftModel.Store.spt_AddCustomerTypes" />
+    <FunctionImportMapping FunctionImportName="spt_AddLog" FunctionName="RubberSoftModel.Store.spt_AddLog" />
+    <FunctionImportMapping FunctionImportName="spt_AddOption" FunctionName="RubberSoftModel.Store.spt_AddOption" />
+    <FunctionImportMapping FunctionImportName="spt_AddOutStandingBalance" FunctionName="RubberSoftModel.Store.spt_AddOutStandingBalance" />
+    <FunctionImportMapping FunctionImportName="spt_AddOutStandingLog" FunctionName="RubberSoftModel.Store.spt_AddOutStandingLog" />
+    <FunctionImportMapping FunctionImportName="spt_AddSale" FunctionName="RubberSoftModel.Store.spt_AddSale" />
+    <FunctionImportMapping FunctionImportName="spt_AddSaleProduct" FunctionName="RubberSoftModel.Store.spt_AddSaleProduct" />
+    <FunctionImportMapping FunctionImportName="spt_AddSaveBuyProduct" FunctionName="RubberSoftModel.Store.spt_AddSaveBuyProduct" />
+    <FunctionImportMapping FunctionImportName="spt_AddSaveSale" FunctionName="RubberSoftModel.Store.spt_AddSaveSale" />
+    <FunctionImportMapping FunctionImportName="spt_AddSaveSaleProduct" FunctionName="RubberSoftModel.Store.spt_AddSaveSaleProduct" />
+    <FunctionImportMapping FunctionImportName="spt_AddTerminal" FunctionName="RubberSoftModel.Store.spt_AddTerminal" />
+    <FunctionImportMapping FunctionImportName="spt_AddTransactionLog" FunctionName="RubberSoftModel.Store.spt_AddTransactionLog" />
+    <FunctionImportMapping FunctionImportName="spt_AddUsers" FunctionName="RubberSoftModel.Store.spt_AddUsers" />
+    <FunctionImportMapping FunctionImportName="spt_AddWeightBalance" FunctionName="RubberSoftModel.Store.spt_AddWeightBalance" />
+    <FunctionImportMapping FunctionImportName="spt_DeleteCustomer" FunctionName="RubberSoftModel.Store.spt_DeleteCustomer" />
+    <FunctionImportMapping FunctionImportName="spt_DeleteCustomerPrice" FunctionName="RubberSoftModel.Store.spt_DeleteCustomerPrice" />
+    <FunctionImportMapping FunctionImportName="spt_GetBuy" FunctionName="RubberSoftModel.Store.spt_GetBuy">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetBuy_Result">
+          <ScalarProperty Name="BuyId" ColumnName="BuyId" />
+          <ScalarProperty Name="BuyNumber" ColumnName="BuyNumber" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="BeginBalance" ColumnName="BeginBalance" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="ProductUsing" ColumnName="ProductUsing" />
+          <ScalarProperty Name="IsFinalze" ColumnName="IsFinalze" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetBuyBill" FunctionName="RubberSoftModel.Store.spt_GetBuyBill">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetBuyBill_Result">
+          <ScalarProperty Name="BuyId" ColumnName="BuyId" />
+          <ScalarProperty Name="BuyNumber" ColumnName="BuyNumber" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerAddress" ColumnName="CustomerAddress" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="BeginBalance" ColumnName="BeginBalance" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="IsFinalze" ColumnName="IsFinalze" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="BuyProductId" ColumnName="BuyProductId" />
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="CalRubber" ColumnName="CalRubber" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetBuyNumber" FunctionName="RubberSoftModel.Store.spt_GetBuyNumber" />
+    <FunctionImportMapping FunctionImportName="spt_GetBuyProduct" FunctionName="RubberSoftModel.Store.spt_GetBuyProduct">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetBuyProduct_Result">
+          <ScalarProperty Name="BuyProductId" ColumnName="BuyProductId" />
+          <ScalarProperty Name="BuyId" ColumnName="BuyId" />
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+          <ScalarProperty Name="ItemPriceId" ColumnName="ItemPriceId" />
+          <ScalarProperty Name="PriceName" ColumnName="PriceName" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="CalRubber" ColumnName="CalRubber" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="InsertBy" ColumnName="InsertBy" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+          <ScalarProperty Name="DeleteDate" ColumnName="DeleteDate" />
+          <ScalarProperty Name="DeleteBy" ColumnName="DeleteBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetBuyWeightBalance" FunctionName="RubberSoftModel.Store.spt_GetBuyWeightBalance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetBuyWeightBalance_Result">
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="sName" ColumnName="sName" />
+          <ScalarProperty Name="PriceName" ColumnName="PriceName" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="SalePriceAdvance" ColumnName="SalePriceAdvance" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="BeginAmt" ColumnName="BeginAmt" />
+          <ScalarProperty Name="DeliveryPrice" ColumnName="DeliveryPrice" />
+          <ScalarProperty Name="BeginBalanceAmt" ColumnName="BeginBalanceAmt" />
+          <ScalarProperty Name="WeightBalanceAmt" ColumnName="WeightBalanceAmt" />
+          <ScalarProperty Name="LastLogId" ColumnName="LastLogId" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="ItemPriceId" ColumnName="ItemPriceId" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetCustomer" FunctionName="RubberSoftModel.Store.spt_GetCustomer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetCustomer_Result">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerTypeId" ColumnName="CustomerTypeId" />
+          <ScalarProperty Name="CustomerGroupId" ColumnName="CustomerGroupId" />
+          <ScalarProperty Name="CustomerTypeName" ColumnName="CustomerTypeName" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerAddress" ColumnName="CustomerAddress" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetCustomerPrice" FunctionName="RubberSoftModel.Store.spt_GetCustomerPrice" />
+    <FunctionImportMapping FunctionImportName="spt_GetCustomerTypes" FunctionName="RubberSoftModel.Store.spt_GetCustomerTypes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetCustomerTypes_Result">
+          <ScalarProperty Name="CustomerTypeId" ColumnName="CustomerTypeId" />
+          <ScalarProperty Name="CustomerTypeName" ColumnName="CustomerTypeName" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="InsertBy" ColumnName="InsertBy" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+          <ScalarProperty Name="DeleteDate" ColumnName="DeleteDate" />
+          <ScalarProperty Name="DeleteBy" ColumnName="DeleteBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetLogDetails" FunctionName="RubberSoftModel.Store.spt_GetLogDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetLogDetails_Result">
+          <ScalarProperty Name="LogId" ColumnName="LogId" />
+          <ScalarProperty Name="LogTypeId" ColumnName="LogTypeId" />
+          <ScalarProperty Name="LogName" ColumnName="LogName" />
+          <ScalarProperty Name="LogDetail" ColumnName="LogDetail" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IPMachine" ColumnName="IPMachine" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetOptions" FunctionName="RubberSoftModel.Store.spt_GetOptions">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetOptions_Result">
+          <ScalarProperty Name="OptionID" ColumnName="OptionID" />
+          <ScalarProperty Name="TerminalId" ColumnName="TerminalId" />
+          <ScalarProperty Name="TerminalName" ColumnName="TerminalName" />
+          <ScalarProperty Name="OptionName" ColumnName="OptionName" />
+          <ScalarProperty Name="OptionValue" ColumnName="OptionValue" />
+          <ScalarProperty Name="DateValue" ColumnName="DateValue" />
+          <ScalarProperty Name="TimeValue" ColumnName="TimeValue" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetOutStandingBalance" FunctionName="RubberSoftModel.Store.spt_GetOutStandingBalance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetOutStandingBalance_Result">
+          <ScalarProperty Name="OutStandingBalanceId" ColumnName="OutStandingBalanceId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="BeginDebt" ColumnName="BeginDebt" />
+          <ScalarProperty Name="OutstandingDebt" ColumnName="OutstandingDebt" />
+          <ScalarProperty Name="LastLogId" ColumnName="LastLogId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetOutStandingLog" FunctionName="RubberSoftModel.Store.spt_GetOutStandingLog">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetOutStandingLog_Result">
+          <ScalarProperty Name="OutStandingLogId" ColumnName="OutStandingLogId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="BeginOutstandingDebt" ColumnName="BeginOutstandingDebt" />
+          <ScalarProperty Name="OutstandingDebt" ColumnName="OutstandingDebt" />
+          <ScalarProperty Name="RefId" ColumnName="RefId" />
+          <ScalarProperty Name="OutStandingStatus" ColumnName="OutStandingStatus" />
+          <ScalarProperty Name="LogTypeId" ColumnName="LogTypeId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetRoles" FunctionName="RubberSoftModel.Store.spt_GetRoles">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetRoles_Result">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleFullName" ColumnName="RoleFullName" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetSale" FunctionName="RubberSoftModel.Store.spt_GetSale">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetSale_Result">
+          <ScalarProperty Name="SaleId" ColumnName="SaleId" />
+          <ScalarProperty Name="SaleNumber" ColumnName="SaleNumber" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="IsFinalze" ColumnName="IsFinalze" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetSaleNumber" FunctionName="RubberSoftModel.Store.spt_GetSaleNumber" />
+    <FunctionImportMapping FunctionImportName="spt_GetSaleProduct" FunctionName="RubberSoftModel.Store.spt_GetSaleProduct">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetSaleProduct_Result">
+          <ScalarProperty Name="SaleProductId" ColumnName="SaleProductId" />
+          <ScalarProperty Name="SaleId" ColumnName="SaleId" />
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+          <ScalarProperty Name="ItemPriceId" ColumnName="ItemPriceId" />
+          <ScalarProperty Name="PriceName" ColumnName="PriceName" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="CalRubber" ColumnName="CalRubber" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="InsertBy" ColumnName="InsertBy" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+          <ScalarProperty Name="DeleteDate" ColumnName="DeleteDate" />
+          <ScalarProperty Name="DeleteBy" ColumnName="DeleteBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetSaleWeightBalance" FunctionName="RubberSoftModel.Store.spt_GetSaleWeightBalance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetSaleWeightBalance_Result">
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="sName" ColumnName="sName" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="SalePriceAdvance" ColumnName="SalePriceAdvance" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="BeginAmt" ColumnName="BeginAmt" />
+          <ScalarProperty Name="DeliveryPrice" ColumnName="DeliveryPrice" />
+          <ScalarProperty Name="BeginBalanceAmt" ColumnName="BeginBalanceAmt" />
+          <ScalarProperty Name="WeightBalanceAmt" ColumnName="WeightBalanceAmt" />
+          <ScalarProperty Name="LastLogId" ColumnName="LastLogId" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetSaveBuyNumber" FunctionName="RubberSoftModel.Store.spt_GetSaveBuyNumber" />
+    <FunctionImportMapping FunctionImportName="spt_GetSaveBuyProduct" FunctionName="RubberSoftModel.Store.spt_GetSaveBuyProduct">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetSaveBuyProduct_Result">
+          <ScalarProperty Name="BuyProductId" ColumnName="BuyProductId" />
+          <ScalarProperty Name="BuyId" ColumnName="BuyId" />
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+          <ScalarProperty Name="ItemPriceId" ColumnName="ItemPriceId" />
+          <ScalarProperty Name="PriceName" ColumnName="PriceName" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="CalRubber" ColumnName="CalRubber" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="InsertBy" ColumnName="InsertBy" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+          <ScalarProperty Name="DeleteDate" ColumnName="DeleteDate" />
+          <ScalarProperty Name="DeleteBy" ColumnName="DeleteBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetSaveSale" FunctionName="RubberSoftModel.Store.spt_GetSaveSale">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetSaveSale_Result">
+          <ScalarProperty Name="SaveSaleId" ColumnName="SaveSaleId" />
+          <ScalarProperty Name="SaleNumber" ColumnName="SaleNumber" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="ProductUsing" ColumnName="ProductUsing" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="InsertBy" ColumnName="InsertBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetSaveSaleNumber" FunctionName="RubberSoftModel.Store.spt_GetSaveSaleNumber" />
+    <FunctionImportMapping FunctionImportName="spt_GetSaveSaleProduct" FunctionName="RubberSoftModel.Store.spt_GetSaveSaleProduct">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetSaveSaleProduct_Result">
+          <ScalarProperty Name="SaleProductId" ColumnName="SaleProductId" />
+          <ScalarProperty Name="SaleId" ColumnName="SaleId" />
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+          <ScalarProperty Name="ItemPriceId" ColumnName="ItemPriceId" />
+          <ScalarProperty Name="PriceName" ColumnName="PriceName" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="CalRubber" ColumnName="CalRubber" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="InsertBy" ColumnName="InsertBy" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+          <ScalarProperty Name="DeleteDate" ColumnName="DeleteDate" />
+          <ScalarProperty Name="DeleteBy" ColumnName="DeleteBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetTerminal" FunctionName="RubberSoftModel.Store.spt_GetTerminal">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetTerminal_Result">
+          <ScalarProperty Name="TerminalId" ColumnName="TerminalId" />
+          <ScalarProperty Name="TerminalName" ColumnName="TerminalName" />
+          <ScalarProperty Name="IPMachine" ColumnName="IPMachine" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetTransactionLog" FunctionName="RubberSoftModel.Store.spt_GetTransactionLog">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetTransactionLog_Result">
+          <ScalarProperty Name="LogId" ColumnName="LogId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+          <ScalarProperty Name="BeginAmt" ColumnName="BeginAmt" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="WeightBalanceAmt" ColumnName="WeightBalanceAmt" />
+          <ScalarProperty Name="RefId" ColumnName="RefId" />
+          <ScalarProperty Name="LogTypeId" ColumnName="LogTypeId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetUsers" FunctionName="RubberSoftModel.Store.spt_GetUsers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetUsers_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserTypeId" ColumnName="UserTypeId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetWeightBalance" FunctionName="RubberSoftModel.Store.spt_GetWeightBalance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetWeightBalance_Result">
+          <ScalarProperty Name="WeightBalanceId" ColumnName="WeightBalanceId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+          <ScalarProperty Name="BeginBalanceAmt" ColumnName="BeginBalanceAmt" />
+          <ScalarProperty Name="WeightBalanceAmt" ColumnName="WeightBalanceAmt" />
+          <ScalarProperty Name="LastLogId" ColumnName="LastLogId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_UpdateBuy" FunctionName="RubberSoftModel.Store.spt_UpdateBuy" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateBuyProduct" FunctionName="RubberSoftModel.Store.spt_UpdateBuyProduct" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateCustomer" FunctionName="RubberSoftModel.Store.spt_UpdateCustomer" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateCustomerPrice" FunctionName="RubberSoftModel.Store.spt_UpdateCustomerPrice" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateCustomerTypes" FunctionName="RubberSoftModel.Store.spt_UpdateCustomerTypes" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateOptions" FunctionName="RubberSoftModel.Store.spt_UpdateOptions" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateOutStandingBalance" FunctionName="RubberSoftModel.Store.spt_UpdateOutStandingBalance" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateSale" FunctionName="RubberSoftModel.Store.spt_UpdateSale" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateSaleProduct" FunctionName="RubberSoftModel.Store.spt_UpdateSaleProduct" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateSaveBuyProduct" FunctionName="RubberSoftModel.Store.spt_UpdateSaveBuyProduct" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateSaveSale" FunctionName="RubberSoftModel.Store.spt_UpdateSaveSale" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateSaveSaleProduct" FunctionName="RubberSoftModel.Store.spt_UpdateSaveSaleProduct" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateTerminal" FunctionName="RubberSoftModel.Store.spt_UpdateTerminal" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateUsers" FunctionName="RubberSoftModel.Store.spt_UpdateUsers" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateWeightBalance" FunctionName="RubberSoftModel.Store.spt_UpdateWeightBalance" />
+    <FunctionImportMapping FunctionImportName="spt_AddConsignment" FunctionName="RubberSoftModel.Store.spt_AddConsignment" />
+    <FunctionImportMapping FunctionImportName="spt_AddConsignmentProduct" FunctionName="RubberSoftModel.Store.spt_AddConsignmentProduct" />
+    <FunctionImportMapping FunctionImportName="spt_GetConsignment" FunctionName="RubberSoftModel.Store.spt_GetConsignment">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetConsignment_Result">
+          <ScalarProperty Name="ConsignmentId" ColumnName="ConsignmentId" />
+          <ScalarProperty Name="BuyNumber" ColumnName="BuyNumber" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="ProductUsing" ColumnName="ProductUsing" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="InsertBy" ColumnName="InsertBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_GetConsignmentNumber" FunctionName="RubberSoftModel.Store.spt_GetConsignmentNumber" />
+    <FunctionImportMapping FunctionImportName="spt_GetConsignmentProduct" FunctionName="RubberSoftModel.Store.spt_GetConsignmentProduct">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetConsignmentProduct_Result">
+          <ScalarProperty Name="ConsignmentProductId" ColumnName="ConsignmentProductId" />
+          <ScalarProperty Name="ConsignmentId" ColumnName="ConsignmentId" />
+          <ScalarProperty Name="PriceId" ColumnName="PriceId" />
+          <ScalarProperty Name="ItemPriceId" ColumnName="ItemPriceId" />
+          <ScalarProperty Name="PriceName" ColumnName="PriceName" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="WeightAmount" ColumnName="WeightAmount" />
+          <ScalarProperty Name="WeightAmount_Plate" ColumnName="WeightAmount_Plate" />
+          <ScalarProperty Name="Drc" ColumnName="Drc" />
+          <ScalarProperty Name="TotalPrice_Smoke" ColumnName="TotalPrice_Smoke" />
+          <ScalarProperty Name="WeightAmount_Raw" ColumnName="WeightAmount_Raw" />
+          <ScalarProperty Name="TotalPrice_Raw" ColumnName="TotalPrice_Raw" />
+          <ScalarProperty Name="CalRubber" ColumnName="CalRubber" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="InsertBy" ColumnName="InsertBy" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+          <ScalarProperty Name="DeleteDate" ColumnName="DeleteDate" />
+          <ScalarProperty Name="DeleteBy" ColumnName="DeleteBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_UpdateConsignment" FunctionName="RubberSoftModel.Store.spt_UpdateConsignment" />
+    <FunctionImportMapping FunctionImportName="spt_UpdateConsignmentProduct" FunctionName="RubberSoftModel.Store.spt_UpdateConsignmentProduct" />
+    <FunctionImportMapping FunctionImportName="spt_AddSaveBuy" FunctionName="RubberSoftModel.Store.spt_AddSaveBuy" />
+    <FunctionImportMapping FunctionImportName="spt_GetSaveBuy" FunctionName="RubberSoftModel.Store.spt_GetSaveBuy">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RubberSoftModel.spt_GetSaveBuy_Result">
+          <ScalarProperty Name="SaveBuyId" ColumnName="SaveBuyId" />
+          <ScalarProperty Name="BuyNumber" ColumnName="BuyNumber" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="BuyDate" ColumnName="BuyDate" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="DownValue" ColumnName="DownValue" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+          <ScalarProperty Name="SetOffValue" ColumnName="SetOffValue" />
+          <ScalarProperty Name="ValueBalance" ColumnName="ValueBalance" />
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="ProductUsing" ColumnName="ProductUsing" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="InsertBy" ColumnName="InsertBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="TypeSave" ColumnName="TypeSave" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spt_UpdateSaveBuy" FunctionName="RubberSoftModel.Store.spt_UpdateSaveBuy" />
+  </EntityContainerMapping>
+</Mapping>

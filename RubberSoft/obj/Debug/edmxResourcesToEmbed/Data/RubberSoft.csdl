@@ -1,0 +1,1314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RubberSoftModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="RubberSoftEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="rpt_BuyByDate" ReturnType="Collection(RubberSoftModel.rpt_BuyByDate_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_BuyByDate_2" ReturnType="Collection(RubberSoftModel.rpt_BuyByDate_2_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_BuyByMonth" ReturnType="Collection(RubberSoftModel.rpt_BuyByMonth_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_BuyByMonth_2" ReturnType="Collection(RubberSoftModel.rpt_BuyByMonth_2_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_BuyByYear" ReturnType="Collection(RubberSoftModel.rpt_BuyByYear_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_BuyByYear_2" ReturnType="Collection(RubberSoftModel.rpt_BuyByYear_2_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_BuyWeightBalance_ByDate" ReturnType="Collection(RubberSoftModel.rpt_BuyWeightBalance_ByDate_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_BuyWeightBalance_ByMonth" ReturnType="Collection(RubberSoftModel.rpt_BuyWeightBalance_ByMonth_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_BuyWeightBalance_ByYear" ReturnType="Collection(RubberSoftModel.rpt_BuyWeightBalance_ByYear_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_SaleByDate" ReturnType="Collection(RubberSoftModel.rpt_SaleByDate_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_SaleByDate_1" ReturnType="Collection(RubberSoftModel.rpt_SaleByDate_1_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_SaleByDate_2" ReturnType="Collection(RubberSoftModel.rpt_SaleByDate_2_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_SaleByMonth" ReturnType="Collection(RubberSoftModel.rpt_SaleByMonth_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_SaleByMonth_1" ReturnType="Collection(RubberSoftModel.rpt_SaleByMonth_1_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_SaleByMonth_2" ReturnType="Collection(RubberSoftModel.rpt_SaleByMonth_2_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_SaleByYear" ReturnType="Collection(RubberSoftModel.rpt_SaleByYear_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_SaleByYear_1" ReturnType="Collection(RubberSoftModel.rpt_SaleByYear_1_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_SaleByYear_2" ReturnType="Collection(RubberSoftModel.rpt_SaleByYear_2_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddBuy" ReturnType="Collection(Decimal)">
+      <Parameter Name="BuyNumber" Mode="In" Type="String" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="BuyDate" Mode="In" Type="DateTime" />
+      <Parameter Name="BeginBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="SubTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="DownValue" Mode="In" Type="Decimal" />
+      <Parameter Name="NetTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="SetOffValue" Mode="In" Type="Decimal" />
+      <Parameter Name="ValueBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="ProductUsing" Mode="In" Type="String" />
+      <Parameter Name="IsFinalze" Mode="In" Type="Boolean" />
+      <Parameter Name="InsertBy" Mode="In" Type="Int32" />
+      <Parameter Name="TerminnalId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddBuyProduct" ReturnType="Collection(Decimal)">
+      <Parameter Name="BuyId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemPriceId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceName" Mode="In" Type="String" />
+      <Parameter Name="Percentage" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Plate" Mode="In" Type="Decimal" />
+      <Parameter Name="Drc" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Smoke" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="CalRubber" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="Remark" Mode="In" Type="String" />
+      <Parameter Name="InsertBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddCustomer" ReturnType="Collection(Decimal)">
+      <Parameter Name="CustomerTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerGroupId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerCode" Mode="In" Type="String" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="CustomerAddress" Mode="In" Type="String" />
+      <Parameter Name="LicensePlate" Mode="In" Type="String" />
+      <Parameter Name="Phone" Mode="In" Type="String" />
+      <Parameter Name="IsDefault" Mode="In" Type="Boolean" />
+      <Parameter Name="InsertBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddCustomerPrice" ReturnType="Collection(Decimal)">
+      <Parameter Name="PriceName" Mode="In" Type="String" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="SaleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="SalePriceAdvance" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount" Mode="In" Type="Double" />
+      <Parameter Name="DeliveryPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="IsDefault" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddCustomerTypes" ReturnType="Collection(Decimal)">
+      <Parameter Name="CustomerTypeName" Mode="In" Type="String" />
+      <Parameter Name="InsertBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddLog" ReturnType="Collection(Decimal)">
+      <Parameter Name="LogTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="LogName" Mode="In" Type="String" />
+      <Parameter Name="LogDetail" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="IPMachine" Mode="In" Type="String" />
+      <Parameter Name="MachineName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddOption" ReturnType="Collection(Decimal)">
+      <Parameter Name="TerminalId" Mode="In" Type="Int32" />
+      <Parameter Name="TerminalName" Mode="In" Type="String" />
+      <Parameter Name="OptionName" Mode="In" Type="String" />
+      <Parameter Name="OptionValue" Mode="In" Type="String" />
+      <Parameter Name="DateValue" Mode="In" Type="DateTime" />
+      <Parameter Name="TimeValue" Mode="In" Type="Time" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddOutStandingBalance" ReturnType="Collection(Decimal)">
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="BeginDebt" Mode="In" Type="Decimal" />
+      <Parameter Name="OutstandingDebt" Mode="In" Type="Decimal" />
+      <Parameter Name="LastLogId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddOutStandingLog" ReturnType="Collection(Decimal)">
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="BeginOutstandingDebt" Mode="In" Type="Decimal" />
+      <Parameter Name="OutstandingDebt" Mode="In" Type="Decimal" />
+      <Parameter Name="RefId" Mode="In" Type="Int32" />
+      <Parameter Name="OutStandingStatus" Mode="In" Type="Int32" />
+      <Parameter Name="LogTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddSale" ReturnType="Collection(Decimal)">
+      <Parameter Name="SaleNumber" Mode="In" Type="String" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="SaleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="BeginBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="SubTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="DownValue" Mode="In" Type="Decimal" />
+      <Parameter Name="NetTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="SetOffValue" Mode="In" Type="Decimal" />
+      <Parameter Name="ValueBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="IsFinalze" Mode="In" Type="Boolean" />
+      <Parameter Name="InsertBy" Mode="In" Type="Int32" />
+      <Parameter Name="TerminnalId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddSaleProduct" ReturnType="Collection(Decimal)">
+      <Parameter Name="SaleId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemPriceId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceName" Mode="In" Type="String" />
+      <Parameter Name="Percentage" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Plate" Mode="In" Type="Decimal" />
+      <Parameter Name="Drc" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Smoke" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="CalRubber" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="Remark" Mode="In" Type="String" />
+      <Parameter Name="InsertBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddSaveBuyProduct" ReturnType="Collection(Decimal)">
+      <Parameter Name="BuyId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemPriceId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceName" Mode="In" Type="String" />
+      <Parameter Name="Percentage" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Plate" Mode="In" Type="Decimal" />
+      <Parameter Name="Drc" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Smoke" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="CalRubber" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="Remark" Mode="In" Type="String" />
+      <Parameter Name="InsertBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddSaveSale" ReturnType="Collection(Decimal)">
+      <Parameter Name="SaleNumber" Mode="In" Type="String" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="SaleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="SubTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="DownValue" Mode="In" Type="Decimal" />
+      <Parameter Name="NetTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="SetOffValue" Mode="In" Type="Decimal" />
+      <Parameter Name="ValueBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="ProductUsing" Mode="In" Type="String" />
+      <Parameter Name="InsertBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddSaveSaleProduct" ReturnType="Collection(Decimal)">
+      <Parameter Name="SaleId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemPriceId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceName" Mode="In" Type="String" />
+      <Parameter Name="Percentage" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Plate" Mode="In" Type="Decimal" />
+      <Parameter Name="Drc" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Smoke" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="CalRubber" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="Remark" Mode="In" Type="String" />
+      <Parameter Name="InsertBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddTerminal" ReturnType="Collection(Decimal)">
+      <Parameter Name="TerminalName" Mode="In" Type="String" />
+      <Parameter Name="IPMachine" Mode="In" Type="String" />
+      <Parameter Name="MachineName" Mode="In" Type="String" />
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddTransactionLog" ReturnType="Collection(Decimal)">
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="BeginAmt" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightBalanceAmt" Mode="In" Type="Decimal" />
+      <Parameter Name="RefId" Mode="In" Type="Int32" />
+      <Parameter Name="LogTypeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddUsers" ReturnType="Collection(Decimal)">
+      <Parameter Name="UserTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddWeightBalance" ReturnType="Collection(Decimal)">
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="BeginBalanceAmt" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightBalanceAmt" Mode="In" Type="Decimal" />
+      <Parameter Name="LastLogId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_DeleteCustomer">
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="DeleteBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_DeleteCustomerPrice">
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetBuy" ReturnType="Collection(RubberSoftModel.spt_GetBuy_Result)" />
+    <FunctionImport Name="spt_GetBuyBill" ReturnType="Collection(RubberSoftModel.spt_GetBuyBill_Result)">
+      <Parameter Name="BuyId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetBuyNumber" ReturnType="Collection(String)">
+      <Parameter Name="BuyDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetBuyProduct" ReturnType="Collection(RubberSoftModel.spt_GetBuyProduct_Result)">
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetBuyWeightBalance" ReturnType="Collection(RubberSoftModel.spt_GetBuyWeightBalance_Result)">
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetCustomer" ReturnType="Collection(RubberSoftModel.spt_GetCustomer_Result)" />
+    <FunctionImport Name="spt_GetCustomerPrice" />
+    <FunctionImport Name="spt_GetCustomerTypes" ReturnType="Collection(RubberSoftModel.spt_GetCustomerTypes_Result)" />
+    <FunctionImport Name="spt_GetLogDetails" ReturnType="Collection(RubberSoftModel.spt_GetLogDetails_Result)" />
+    <FunctionImport Name="spt_GetOptions" ReturnType="Collection(RubberSoftModel.spt_GetOptions_Result)" />
+    <FunctionImport Name="spt_GetOutStandingBalance" ReturnType="Collection(RubberSoftModel.spt_GetOutStandingBalance_Result)" />
+    <FunctionImport Name="spt_GetOutStandingLog" ReturnType="Collection(RubberSoftModel.spt_GetOutStandingLog_Result)" />
+    <FunctionImport Name="spt_GetRoles" ReturnType="Collection(RubberSoftModel.spt_GetRoles_Result)" />
+    <FunctionImport Name="spt_GetSale" ReturnType="Collection(RubberSoftModel.spt_GetSale_Result)" />
+    <FunctionImport Name="spt_GetSaleNumber" ReturnType="Collection(String)">
+      <Parameter Name="SaleDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetSaleProduct" ReturnType="Collection(RubberSoftModel.spt_GetSaleProduct_Result)">
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetSaleWeightBalance" ReturnType="Collection(RubberSoftModel.spt_GetSaleWeightBalance_Result)">
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetSaveBuyNumber" ReturnType="Collection(String)">
+      <Parameter Name="BuyDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetSaveBuyProduct" ReturnType="Collection(RubberSoftModel.spt_GetSaveBuyProduct_Result)">
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetSaveSale" ReturnType="Collection(RubberSoftModel.spt_GetSaveSale_Result)" />
+    <FunctionImport Name="spt_GetSaveSaleNumber" ReturnType="Collection(String)">
+      <Parameter Name="SaleDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetSaveSaleProduct" ReturnType="Collection(RubberSoftModel.spt_GetSaveSaleProduct_Result)">
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetTerminal" ReturnType="Collection(RubberSoftModel.spt_GetTerminal_Result)" />
+    <FunctionImport Name="spt_GetTransactionLog" ReturnType="Collection(RubberSoftModel.spt_GetTransactionLog_Result)" />
+    <FunctionImport Name="spt_GetUsers" ReturnType="Collection(RubberSoftModel.spt_GetUsers_Result)" />
+    <FunctionImport Name="spt_GetWeightBalance" ReturnType="Collection(RubberSoftModel.spt_GetWeightBalance_Result)" />
+    <FunctionImport Name="spt_UpdateBuy">
+      <Parameter Name="BuyId" Mode="In" Type="Int32" />
+      <Parameter Name="BuyNumber" Mode="In" Type="String" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="BuyDate" Mode="In" Type="DateTime" />
+      <Parameter Name="BeginBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="SubTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="DownValue" Mode="In" Type="Decimal" />
+      <Parameter Name="NetTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="SetOffValue" Mode="In" Type="Decimal" />
+      <Parameter Name="ValueBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="ProductUsing" Mode="In" Type="String" />
+      <Parameter Name="IsFinalze" Mode="In" Type="Boolean" />
+      <Parameter Name="UpdateBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateBuyProduct">
+      <Parameter Name="BuyProductId" Mode="In" Type="Int32" />
+      <Parameter Name="BuyId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemPriceId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceName" Mode="In" Type="String" />
+      <Parameter Name="Percentage" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Plate" Mode="In" Type="Decimal" />
+      <Parameter Name="Drc" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Smoke" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="CalRubber" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="Remark" Mode="In" Type="String" />
+      <Parameter Name="UpdateBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateCustomer">
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerGroupId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerCode" Mode="In" Type="String" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="CustomerAddress" Mode="In" Type="String" />
+      <Parameter Name="LicensePlate" Mode="In" Type="String" />
+      <Parameter Name="Phone" Mode="In" Type="String" />
+      <Parameter Name="IsDefault" Mode="In" Type="Boolean" />
+      <Parameter Name="UpdateBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateCustomerPrice">
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceName" Mode="In" Type="String" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="SaleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="SalePriceAdvance" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount" Mode="In" Type="Double" />
+      <Parameter Name="DeliveryPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="IsDefault" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateCustomerTypes">
+      <Parameter Name="CustomerTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerTypeName" Mode="In" Type="String" />
+      <Parameter Name="UpdateBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateOptions">
+      <Parameter Name="OptionID" Mode="In" Type="Int32" />
+      <Parameter Name="TerminalId" Mode="In" Type="Int32" />
+      <Parameter Name="TerminalName" Mode="In" Type="String" />
+      <Parameter Name="OptionName" Mode="In" Type="String" />
+      <Parameter Name="OptionValue" Mode="In" Type="String" />
+      <Parameter Name="DateValue" Mode="In" Type="DateTime" />
+      <Parameter Name="TimeValue" Mode="In" Type="Time" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateOutStandingBalance">
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="BeginDebt" Mode="In" Type="Decimal" />
+      <Parameter Name="OutstandingDebt" Mode="In" Type="Decimal" />
+      <Parameter Name="LastLogId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateSale">
+      <Parameter Name="SaleId" Mode="In" Type="Int32" />
+      <Parameter Name="SaleNumber" Mode="In" Type="String" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="SaleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="BeginBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="SubTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="DownValue" Mode="In" Type="Decimal" />
+      <Parameter Name="NetTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="SetOffValue" Mode="In" Type="Decimal" />
+      <Parameter Name="ValueBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="IsFinalze" Mode="In" Type="Boolean" />
+      <Parameter Name="UpdateBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateSaleProduct">
+      <Parameter Name="SaleProductId" Mode="In" Type="Int32" />
+      <Parameter Name="SaleId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemPriceId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceName" Mode="In" Type="String" />
+      <Parameter Name="Percentage" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Plate" Mode="In" Type="Decimal" />
+      <Parameter Name="Drc" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Smoke" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="CalRubber" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="Remark" Mode="In" Type="String" />
+      <Parameter Name="UpdateBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateSaveBuyProduct">
+      <Parameter Name="BuyProductId" Mode="In" Type="Int32" />
+      <Parameter Name="BuyId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemPriceId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceName" Mode="In" Type="String" />
+      <Parameter Name="Percentage" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Plate" Mode="In" Type="Decimal" />
+      <Parameter Name="Drc" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Smoke" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="CalRubber" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="Remark" Mode="In" Type="String" />
+      <Parameter Name="UpdateBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateSaveSale">
+      <Parameter Name="SaveSaleId" Mode="In" Type="Int32" />
+      <Parameter Name="SaleNumber" Mode="In" Type="String" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="SaleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="SubTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="DownValue" Mode="In" Type="Decimal" />
+      <Parameter Name="NetTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="SetOffValue" Mode="In" Type="Decimal" />
+      <Parameter Name="ValueBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="ProductUsing" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateSaveSaleProduct">
+      <Parameter Name="SaleProductId" Mode="In" Type="Int32" />
+      <Parameter Name="SaleId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemPriceId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceName" Mode="In" Type="String" />
+      <Parameter Name="Percentage" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Plate" Mode="In" Type="Decimal" />
+      <Parameter Name="Drc" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Smoke" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="CalRubber" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="Remark" Mode="In" Type="String" />
+      <Parameter Name="UpdateBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateTerminal">
+      <Parameter Name="TerminalId" Mode="In" Type="Int32" />
+      <Parameter Name="IPMachine" Mode="In" Type="String" />
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateUsers">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="UserTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateWeightBalance">
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="BeginBalanceAmt" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightBalanceAmt" Mode="In" Type="Decimal" />
+      <Parameter Name="LastLogId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddConsignment" ReturnType="Collection(Decimal)">
+      <Parameter Name="BuyNumber" Mode="In" Type="String" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="BuyDate" Mode="In" Type="DateTime" />
+      <Parameter Name="SubTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="DownValue" Mode="In" Type="Decimal" />
+      <Parameter Name="NetTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="SetOffValue" Mode="In" Type="Decimal" />
+      <Parameter Name="ValueBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="ProductUsing" Mode="In" Type="String" />
+      <Parameter Name="InsertBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddConsignmentProduct" ReturnType="Collection(Decimal)">
+      <Parameter Name="ConsignmentId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemPriceId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceName" Mode="In" Type="String" />
+      <Parameter Name="Percentage" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Plate" Mode="In" Type="Decimal" />
+      <Parameter Name="Drc" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Smoke" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="CalRubber" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="Remark" Mode="In" Type="String" />
+      <Parameter Name="InsertBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetConsignment" ReturnType="Collection(RubberSoftModel.spt_GetConsignment_Result)" />
+    <FunctionImport Name="spt_GetConsignmentNumber" ReturnType="Collection(String)">
+      <Parameter Name="BuyDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetConsignmentProduct" ReturnType="Collection(RubberSoftModel.spt_GetConsignmentProduct_Result)">
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateConsignment">
+      <Parameter Name="ConsignmentId" Mode="In" Type="Int32" />
+      <Parameter Name="BuyNumber" Mode="In" Type="String" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="BuyDate" Mode="In" Type="DateTime" />
+      <Parameter Name="SubTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="DownValue" Mode="In" Type="Decimal" />
+      <Parameter Name="NetTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="SetOffValue" Mode="In" Type="Decimal" />
+      <Parameter Name="ValueBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="ProductUsing" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spt_UpdateConsignmentProduct">
+      <Parameter Name="ConsignmentProductId" Mode="In" Type="Int32" />
+      <Parameter Name="ConsignmentId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemPriceId" Mode="In" Type="Int32" />
+      <Parameter Name="PriceName" Mode="In" Type="String" />
+      <Parameter Name="Percentage" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Plate" Mode="In" Type="Decimal" />
+      <Parameter Name="Drc" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Smoke" Mode="In" Type="Decimal" />
+      <Parameter Name="WeightAmount_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice_Raw" Mode="In" Type="Decimal" />
+      <Parameter Name="CalRubber" Mode="In" Type="Decimal" />
+      <Parameter Name="TotalPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="Remark" Mode="In" Type="String" />
+      <Parameter Name="UpdateBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_AddSaveBuy" ReturnType="Collection(Decimal)">
+      <Parameter Name="BuyNumber" Mode="In" Type="String" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="BuyDate" Mode="In" Type="DateTime" />
+      <Parameter Name="SubTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="DownValue" Mode="In" Type="Decimal" />
+      <Parameter Name="NetTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="SetOffValue" Mode="In" Type="Decimal" />
+      <Parameter Name="ValueBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="ProductUsing" Mode="In" Type="String" />
+      <Parameter Name="InsertBy" Mode="In" Type="Int32" />
+      <Parameter Name="TypeSave" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spt_GetSaveBuy" ReturnType="Collection(RubberSoftModel.spt_GetSaveBuy_Result)" />
+    <FunctionImport Name="spt_UpdateSaveBuy">
+      <Parameter Name="SaveBuyId" Mode="In" Type="Int32" />
+      <Parameter Name="BuyNumber" Mode="In" Type="String" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="BuyDate" Mode="In" Type="DateTime" />
+      <Parameter Name="SubTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="DownValue" Mode="In" Type="Decimal" />
+      <Parameter Name="NetTotal" Mode="In" Type="Decimal" />
+      <Parameter Name="SetOffValue" Mode="In" Type="Decimal" />
+      <Parameter Name="ValueBalance" Mode="In" Type="Decimal" />
+      <Parameter Name="ProductTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="ProductUsing" Mode="In" Type="String" />
+      <Parameter Name="TypeSave" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="rpt_BuyByDate_Result">
+    <Property Type="Int32" Name="BuyId" Nullable="false" />
+    <Property Type="String" Name="BuyNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="CustomerAddress" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="LicensePlate" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="500" />
+    <Property Type="Decimal" Name="BeginBalance" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="ProductTypeId" Nullable="true" />
+    <Property Type="String" Name="ProductUsing" Nullable="true" MaxLength="150" />
+    <Property Type="Boolean" Name="IsFinalze" Nullable="true" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+    <Property Type="Int32" Name="BuyProductId" Nullable="false" />
+    <Property Type="Int32" Name="PriceId" Nullable="true" />
+    <Property Type="Double" Name="Percentage" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="CalRubber" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_BuyByDate_2_Result">
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="BuyId" Nullable="false" />
+    <Property Type="String" Name="BuyNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_BuyByMonth_Result">
+    <Property Type="Int32" Name="BuyId" Nullable="false" />
+    <Property Type="String" Name="BuyNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="CustomerAddress" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="LicensePlate" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="500" />
+    <Property Type="Decimal" Name="BeginBalance" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="ProductTypeId" Nullable="true" />
+    <Property Type="String" Name="ProductUsing" Nullable="true" MaxLength="150" />
+    <Property Type="Boolean" Name="IsFinalze" Nullable="true" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+    <Property Type="Int32" Name="BuyProductId" Nullable="false" />
+    <Property Type="Int32" Name="PriceId" Nullable="true" />
+    <Property Type="Double" Name="Percentage" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="CalRubber" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_BuyByMonth_2_Result">
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="BuyId" Nullable="false" />
+    <Property Type="String" Name="BuyNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_BuyByYear_Result">
+    <Property Type="Int32" Name="BuyId" Nullable="false" />
+    <Property Type="String" Name="BuyNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="CustomerAddress" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="LicensePlate" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="500" />
+    <Property Type="Decimal" Name="BeginBalance" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="ProductTypeId" Nullable="true" />
+    <Property Type="String" Name="ProductUsing" Nullable="true" MaxLength="150" />
+    <Property Type="Boolean" Name="IsFinalze" Nullable="true" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+    <Property Type="Int32" Name="BuyProductId" Nullable="false" />
+    <Property Type="Int32" Name="PriceId" Nullable="true" />
+    <Property Type="Double" Name="Percentage" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="CalRubber" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_BuyByYear_2_Result">
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="BuyId" Nullable="false" />
+    <Property Type="String" Name="BuyNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_BuyWeightBalance_ByDate_Result">
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="SalePriceAdvance" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="CP_WeightAmount" Nullable="true" />
+    <Property Type="Decimal" Name="BL_WeightBalanceAmt" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Double" Name="WeightBalanceAmt" Nullable="true" />
+    <Property Type="String" Name="LogName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="BuyNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="rpt_BuyWeightBalance_ByMonth_Result">
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="SalePriceAdvance" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="CP_WeightAmount" Nullable="true" />
+    <Property Type="Decimal" Name="BL_WeightBalanceAmt" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Double" Name="WeightBalanceAmt" Nullable="true" />
+    <Property Type="String" Name="LogName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="BuyNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="rpt_BuyWeightBalance_ByYear_Result">
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="SalePriceAdvance" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="CP_WeightAmount" Nullable="true" />
+    <Property Type="Decimal" Name="BL_WeightBalanceAmt" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Double" Name="WeightBalanceAmt" Nullable="true" />
+    <Property Type="String" Name="LogName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="BuyNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="rpt_SaleByDate_Result">
+    <Property Type="String" Name="SaleNumber" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_SaleByDate_1_Result">
+    <Property Type="String" Name="SaleNumber" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_SaleByDate_2_Result">
+    <Property Type="Int32" Name="SaleId" Nullable="false" />
+    <Property Type="String" Name="SaleNumber" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="Percentage" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="CalRubber" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_SaleByMonth_Result">
+    <Property Type="String" Name="SaleNumber" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_SaleByMonth_1_Result">
+    <Property Type="String" Name="SaleNumber" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_SaleByMonth_2_Result">
+    <Property Type="String" Name="SaleNumber" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="Percentage" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="CalRubber" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_SaleByYear_Result">
+    <Property Type="String" Name="SaleNumber" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_SaleByYear_1_Result">
+    <Property Type="String" Name="SaleNumber" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="rpt_SaleByYear_2_Result">
+    <Property Type="String" Name="SaleNumber" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="Percentage" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="CalRubber" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="spt_GetBuy_Result">
+    <Property Type="Int32" Name="BuyId" Nullable="false" />
+    <Property Type="String" Name="BuyNumber" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="BeginBalance" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="ProductTypeId" Nullable="true" />
+    <Property Type="String" Name="ProductUsing" Nullable="true" MaxLength="150" />
+    <Property Type="Boolean" Name="IsFinalze" Nullable="true" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetBuyBill_Result">
+    <Property Type="Int32" Name="BuyId" Nullable="false" />
+    <Property Type="String" Name="BuyNumber" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="CustomerAddress" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="LicensePlate" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="500" />
+    <Property Type="Decimal" Name="BeginBalance" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="ProductTypeId" Nullable="true" />
+    <Property Type="Boolean" Name="IsFinalze" Nullable="true" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+    <Property Type="Int32" Name="BuyProductId" Nullable="false" />
+    <Property Type="Int32" Name="PriceId" Nullable="true" />
+    <Property Type="Double" Name="Percentage" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="CalRubber" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="spt_GetBuyProduct_Result">
+    <Property Type="Int32" Name="BuyProductId" Nullable="false" />
+    <Property Type="Int32" Name="BuyId" Nullable="true" />
+    <Property Type="Int32" Name="PriceId" Nullable="true" />
+    <Property Type="Int32" Name="ItemPriceId" Nullable="true" />
+    <Property Type="String" Name="PriceName" Nullable="true" MaxLength="150" />
+    <Property Type="Double" Name="Percentage" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="CalRubber" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+    <Property Type="DateTime" Name="InsertDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="InsertBy" Nullable="true" />
+    <Property Type="DateTime" Name="UpdateDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="UpdateBy" Nullable="true" />
+    <Property Type="DateTime" Name="DeleteDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="DeleteBy" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetBuyWeightBalance_Result">
+    <Property Type="Int32" Name="PriceId" Nullable="false" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="Int32" Name="sName" Nullable="false" />
+    <Property Type="String" Name="PriceName" Nullable="true" MaxLength="150" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="SalePriceAdvance" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Decimal" Name="BeginAmt" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="DeliveryPrice" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="BeginBalanceAmt" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="WeightBalanceAmt" Nullable="false" Precision="19" />
+    <Property Type="Int32" Name="LastLogId" Nullable="true" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+    <Property Type="Int32" Name="ItemPriceId" Nullable="true" />
+    <Property Type="Decimal" Name="UnitPrice" Nullable="false" Precision="19" />
+    <Property Type="Boolean" Name="IsDefault" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetCustomer_Result">
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="Int32" Name="CustomerTypeId" Nullable="true" />
+    <Property Type="Int32" Name="CustomerGroupId" Nullable="true" />
+    <Property Type="String" Name="CustomerTypeName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="CustomerAddress" Nullable="true" MaxLength="2000" />
+    <Property Type="String" Name="LicensePlate" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="IsDefault" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="spt_GetCustomerTypes_Result">
+    <Property Type="Int32" Name="CustomerTypeId" Nullable="false" />
+    <Property Type="String" Name="CustomerTypeName" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+    <Property Type="DateTime" Name="InsertDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="InsertBy" Nullable="true" />
+    <Property Type="DateTime" Name="UpdateDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="UpdateBy" Nullable="true" />
+    <Property Type="DateTime" Name="DeleteDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="DeleteBy" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetLogDetails_Result">
+    <Property Type="Int32" Name="LogId" Nullable="false" />
+    <Property Type="Int32" Name="LogTypeId" Nullable="true" />
+    <Property Type="String" Name="LogName" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="LogDetail" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="UserId" Nullable="true" />
+    <Property Type="String" Name="IPMachine" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="MachineName" Nullable="true" MaxLength="150" />
+    <Property Type="DateTime" Name="LogDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="spt_GetOptions_Result">
+    <Property Type="Int32" Name="OptionID" Nullable="false" />
+    <Property Type="Int32" Name="TerminalId" Nullable="true" />
+    <Property Type="String" Name="TerminalName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="OptionName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="OptionValue" Nullable="true" MaxLength="250" />
+    <Property Type="DateTime" Name="DateValue" Nullable="true" />
+    <Property Type="Time" Name="TimeValue" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetOutStandingBalance_Result">
+    <Property Type="Int32" Name="OutStandingBalanceId" Nullable="false" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="Decimal" Name="BeginDebt" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="OutstandingDebt" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="LastLogId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetOutStandingLog_Result">
+    <Property Type="Int32" Name="OutStandingLogId" Nullable="false" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="Decimal" Name="BeginOutstandingDebt" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="OutstandingDebt" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="RefId" Nullable="true" />
+    <Property Type="Int32" Name="OutStandingStatus" Nullable="true" />
+    <Property Type="Int32" Name="LogTypeId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetRoles_Result">
+    <Property Type="Int32" Name="RoleId" Nullable="false" />
+    <Property Type="String" Name="RoleName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="RoleFullName" Nullable="true" MaxLength="250" />
+    <Property Type="Int32" Name="Active" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetSale_Result">
+    <Property Type="Int32" Name="SaleId" Nullable="false" />
+    <Property Type="String" Name="SaleNumber" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="ProductTypeId" Nullable="true" />
+    <Property Type="Boolean" Name="IsFinalze" Nullable="true" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetSaleProduct_Result">
+    <Property Type="Int32" Name="SaleProductId" Nullable="false" />
+    <Property Type="Int32" Name="SaleId" Nullable="true" />
+    <Property Type="Int32" Name="PriceId" Nullable="true" />
+    <Property Type="Int32" Name="ItemPriceId" Nullable="true" />
+    <Property Type="String" Name="PriceName" Nullable="true" MaxLength="150" />
+    <Property Type="Double" Name="Percentage" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="CalRubber" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+    <Property Type="DateTime" Name="InsertDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="InsertBy" Nullable="true" />
+    <Property Type="DateTime" Name="UpdateDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="UpdateBy" Nullable="true" />
+    <Property Type="DateTime" Name="DeleteDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="DeleteBy" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetSaleWeightBalance_Result">
+    <Property Type="Int32" Name="PriceId" Nullable="false" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="Int32" Name="sName" Nullable="false" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="SalePriceAdvance" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Decimal" Name="BeginAmt" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="DeliveryPrice" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="BeginBalanceAmt" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="WeightBalanceAmt" Nullable="false" Precision="19" />
+    <Property Type="Int32" Name="LastLogId" Nullable="true" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetSaveBuyProduct_Result">
+    <Property Type="Int32" Name="BuyProductId" Nullable="false" />
+    <Property Type="Int32" Name="BuyId" Nullable="true" />
+    <Property Type="Int32" Name="PriceId" Nullable="true" />
+    <Property Type="Int32" Name="ItemPriceId" Nullable="true" />
+    <Property Type="String" Name="PriceName" Nullable="true" MaxLength="150" />
+    <Property Type="Double" Name="Percentage" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="CalRubber" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+    <Property Type="DateTime" Name="InsertDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="InsertBy" Nullable="true" />
+    <Property Type="DateTime" Name="UpdateDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="UpdateBy" Nullable="true" />
+    <Property Type="DateTime" Name="DeleteDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="DeleteBy" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetSaveSale_Result">
+    <Property Type="Int32" Name="SaveSaleId" Nullable="false" />
+    <Property Type="String" Name="SaleNumber" Nullable="true" MaxLength="150" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="250" />
+    <Property Type="DateTime" Name="SaleDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="ProductTypeId" Nullable="true" />
+    <Property Type="String" Name="ProductUsing" Nullable="true" MaxLength="150" />
+    <Property Type="DateTime" Name="InsertDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="InsertBy" Nullable="true" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetSaveSaleProduct_Result">
+    <Property Type="Int32" Name="SaleProductId" Nullable="false" />
+    <Property Type="Int32" Name="SaleId" Nullable="true" />
+    <Property Type="Int32" Name="PriceId" Nullable="true" />
+    <Property Type="Int32" Name="ItemPriceId" Nullable="true" />
+    <Property Type="String" Name="PriceName" Nullable="true" MaxLength="150" />
+    <Property Type="Double" Name="Percentage" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="CalRubber" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+    <Property Type="DateTime" Name="InsertDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="InsertBy" Nullable="true" />
+    <Property Type="DateTime" Name="UpdateDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="UpdateBy" Nullable="true" />
+    <Property Type="DateTime" Name="DeleteDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="DeleteBy" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetTerminal_Result">
+    <Property Type="Int32" Name="TerminalId" Nullable="false" />
+    <Property Type="String" Name="TerminalName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="IPMachine" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="MachineName" Nullable="true" MaxLength="250" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetTransactionLog_Result">
+    <Property Type="Int32" Name="LogId" Nullable="false" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="Int32" Name="PriceId" Nullable="true" />
+    <Property Type="Double" Name="BeginAmt" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Double" Name="WeightBalanceAmt" Nullable="true" />
+    <Property Type="Int32" Name="RefId" Nullable="true" />
+    <Property Type="Int32" Name="LogTypeId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetUsers_Result">
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="Int32" Name="UserTypeId" Nullable="true" />
+    <Property Type="String" Name="RoleName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="UserName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="250" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetWeightBalance_Result">
+    <Property Type="Int32" Name="WeightBalanceId" Nullable="false" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="Int32" Name="PriceId" Nullable="true" />
+    <Property Type="Decimal" Name="BeginBalanceAmt" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="WeightBalanceAmt" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="LastLogId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetConsignment_Result">
+    <Property Type="Int32" Name="ConsignmentId" Nullable="false" />
+    <Property Type="String" Name="BuyNumber" Nullable="true" MaxLength="150" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="250" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="ProductTypeId" Nullable="true" />
+    <Property Type="String" Name="ProductUsing" Nullable="true" MaxLength="150" />
+    <Property Type="DateTime" Name="InsertDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="InsertBy" Nullable="true" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetConsignmentProduct_Result">
+    <Property Type="Int32" Name="ConsignmentProductId" Nullable="false" />
+    <Property Type="Int32" Name="ConsignmentId" Nullable="true" />
+    <Property Type="Int32" Name="PriceId" Nullable="true" />
+    <Property Type="Int32" Name="ItemPriceId" Nullable="true" />
+    <Property Type="String" Name="PriceName" Nullable="true" MaxLength="150" />
+    <Property Type="Double" Name="Percentage" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount" Nullable="true" />
+    <Property Type="Double" Name="WeightAmount_Plate" Nullable="true" />
+    <Property Type="Double" Name="Drc" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Smoke" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="WeightAmount_Raw" Nullable="true" />
+    <Property Type="Decimal" Name="TotalPrice_Raw" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="CalRubber" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+    <Property Type="DateTime" Name="InsertDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="InsertBy" Nullable="true" />
+    <Property Type="DateTime" Name="UpdateDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="UpdateBy" Nullable="true" />
+    <Property Type="DateTime" Name="DeleteDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="DeleteBy" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="spt_GetSaveBuy_Result">
+    <Property Type="Int32" Name="SaveBuyId" Nullable="false" />
+    <Property Type="String" Name="BuyNumber" Nullable="true" MaxLength="150" />
+    <Property Type="Int32" Name="CustomerId" Nullable="true" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="250" />
+    <Property Type="DateTime" Name="BuyDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="DownValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="NetTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="SetOffValue" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ValueBalance" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="ProductTypeId" Nullable="true" />
+    <Property Type="String" Name="ProductUsing" Nullable="true" MaxLength="150" />
+    <Property Type="DateTime" Name="InsertDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="InsertBy" Nullable="true" />
+    <Property Type="Boolean" Name="Active" Nullable="true" />
+    <Property Type="Int32" Name="TypeSave" Nullable="true" />
+  </ComplexType>
+</Schema>

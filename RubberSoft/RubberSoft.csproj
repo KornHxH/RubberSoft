@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1ABA254-B2C9-46FE-9EF4-BA7B4A71A507}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RubberSoft</RootNamespace>
+    <AssemblyName>RubberSoft</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>IDE0059;IDE0052;IDE1006;IDE0017</NoWarn>
+    <WarningsAsErrors>CS0649</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>RubberSoft.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_account.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bill\FrmBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill\FrmBill.Designer.cs">
+      <DependentUpon>FrmBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ClassProperty.cs" />
+    <Compile Include="Data\rpt_BuyByDate_2_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_BuyByDate_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_BuyByMonth_2_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_BuyByMonth_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_BuyByYear_2_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_BuyByYear_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_BuyWeightBalance_ByDate_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_BuyWeightBalance_ByMonth_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_BuyWeightBalance_ByYear_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_SaleByDate_1_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_SaleByDate_2_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_SaleByDate_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_SaleByMonth_1_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_SaleByMonth_2_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_SaleByMonth_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_SaleByYear_1_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_SaleByYear_2_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\rpt_SaleByYear_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\RubberSoft.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RubberSoft.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\RubberSoft.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\RubberSoft.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RubberSoft.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetBuyBill_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetBuyProduct_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetBuyWeightBalance_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetBuy_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetConsignmentProduct_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetConsignment_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetCustomerTypes_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetCustomer_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetLogDetails_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetOptions_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetOutStandingBalance_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetOutStandingLog_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetRoles_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetSaleProduct_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetSaleWeightBalance_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetSale_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetSaveBuyProduct_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetSaveBuy_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetSaveSaleProduct_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetSaveSale_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetTerminal_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetTransactionLog_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetUsers_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\spt_GetWeightBalance_Result.cs">
+      <DependentUpon>RubberSoft.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SQLAddImage.cs" />
+    <Compile Include="Data\SQLAuthorized.cs" />
+    <Compile Include="Data\SQLBuy.cs" />
+    <Compile Include="Data\SQLClearData.cs" />
+    <Compile Include="Data\SQLCustomer.cs" />
+    <Compile Include="Data\SQLData.cs" />
+    <Compile Include="Data\SQLLog.cs" />
+    <Compile Include="Data\SQLReport.cs" />
+    <Compile Include="Data\SQLSale.cs" />
+    <Compile Include="Data\SQLTerminal.cs" />
+    <Compile Include="Main\FrmAddPercent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmAddPercent.Designer.cs">
+      <DependentUpon>FrmAddPercent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmAddPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmAddPrice.Designer.cs">
+      <DependentUpon>FrmAddPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmAddUser.Designer.cs">
+      <DependentUpon>FrmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmAuthorized.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmAuthorized.Designer.cs">
+      <DependentUpon>FrmAuthorized.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmBuyLatex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmBuyLatex.Designer.cs">
+      <DependentUpon>FrmBuyLatex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmPayment.Designer.cs">
+      <DependentUpon>FrmPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmSaleLatex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmSaleLatex.Designer.cs">
+      <DependentUpon>FrmSaleLatex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmSplashScreen.Designer.cs">
+      <DependentUpon>FrmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UcAddCustomerPrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\UcAddCustomerPrice.Designer.cs">
+      <DependentUpon>UcAddCustomerPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UcCustomerType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\UcCustomerType.Designer.cs">
+      <DependentUpon>UcCustomerType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UcLoadBuy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\UcLoadBuy.Designer.cs">
+      <DependentUpon>UcLoadBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UcLoadSale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\UcLoadSale.Designer.cs">
+      <DependentUpon>UcLoadSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UcLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\UcLogin.Designer.cs">
+      <DependentUpon>UcLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UcOpenSaveBuy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\UcOpenSaveBuy.Designer.cs">
+      <DependentUpon>UcOpenSaveBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UcOpenSaveSale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\UcOpenSaveSale.Designer.cs">
+      <DependentUpon>UcOpenSaveSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UcSelectProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\UcSelectProduct.Designer.cs">
+      <DependentUpon>UcSelectProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\Data\dtBuyBill.cs">
+      <DependentUpon>dtBuyBill.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Data\dtBuyBill.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtBuyBill.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Data\dtSale.cs">
+      <DependentUpon>dtSale.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Data\dtSale.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtSale.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Data\dtWeightBalance.cs">
+      <DependentUpon>dtWeightBalance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Data\dtWeightBalance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtWeightBalance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptBuyBill.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptBuyBill.Designer.cs">
+      <DependentUpon>RptBuyBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptBuyLatex.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptBuyLatex.Designer.cs">
+      <DependentUpon>rptBuyLatex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptCashAdvance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptCashAdvance.Designer.cs">
+      <DependentUpon>rptCashAdvance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_BuyReport_1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_BuyReport_1.Designer.cs">
+      <DependentUpon>Rpt_BuyReport_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptSaleBill.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptSaleBill.Designer.cs">
+      <DependentUpon>RptSaleBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptSaleBill_1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptSaleBill_1.Designer.cs">
+      <DependentUpon>RptSaleBill_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptBuyBill_1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptBuyBill_1.Designer.cs">
+      <DependentUpon>RptBuyBill_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_BuyReport_2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_BuyReport_2.Designer.cs">
+      <DependentUpon>Rpt_BuyReport_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_BuyWeightBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_BuyWeightBalance.Designer.cs">
+      <DependentUpon>Rpt_BuyWeightBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_SaleReport_1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_SaleReport_1.Designer.cs">
+      <DependentUpon>Rpt_SaleReport_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_SaleReport_2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_SaleReport_2.Designer.cs">
+      <DependentUpon>Rpt_SaleReport_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_SaleWeightBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_SaleWeightBalance.Designer.cs">
+      <DependentUpon>Rpt_SaleWeightBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\subRptWeightBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\subRptWeightBalance.Designer.cs">
+      <DependentUpon>subRptWeightBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\FrmAdjustOutStandingBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\FrmAdjustOutStandingBalance.Designer.cs">
+      <DependentUpon>FrmAdjustOutStandingBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\FrmClearData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\FrmClearData.Designer.cs">
+      <DependentUpon>FrmClearData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\FrmGetBuyData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\FrmGetBuyData.Designer.cs">
+      <DependentUpon>FrmGetBuyData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\FrmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\FrmOptions.Designer.cs">
+      <DependentUpon>FrmOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\FrmTerminal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\FrmTerminal.Designer.cs">
+      <DependentUpon>FrmTerminal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\FrmTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\FrmTools.Designer.cs">
+      <DependentUpon>FrmTools.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bill\FrmBill.resx">
+      <DependentUpon>FrmBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmAddPercent.resx">
+      <DependentUpon>FrmAddPercent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmAddPrice.resx">
+      <DependentUpon>FrmAddPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmAddUser.resx">
+      <DependentUpon>FrmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmAuthorized.resx">
+      <DependentUpon>FrmAuthorized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmBuyLatex.resx">
+      <DependentUpon>FrmBuyLatex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmPayment.resx">
+      <DependentUpon>FrmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmSaleLatex.resx">
+      <DependentUpon>FrmSaleLatex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmSplashScreen.resx">
+      <DependentUpon>FrmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\UcAddCustomerPrice.resx">
+      <DependentUpon>UcAddCustomerPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\UcCustomerType.resx">
+      <DependentUpon>UcCustomerType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\UcLoadBuy.resx">
+      <DependentUpon>UcLoadBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\UcLoadSale.resx">
+      <DependentUpon>UcLoadSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\UcLogin.resx">
+      <DependentUpon>UcLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\UcOpenSaveBuy.resx">
+      <DependentUpon>UcOpenSaveBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\UcOpenSaveSale.resx">
+      <DependentUpon>UcOpenSaveSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\UcSelectProduct.resx">
+      <DependentUpon>UcSelectProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptBuyBill.resx">
+      <DependentUpon>RptBuyBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptBuyLatex.resx">
+      <DependentUpon>rptBuyLatex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptCashAdvance.resx">
+      <DependentUpon>rptCashAdvance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_BuyReport_1.resx">
+      <DependentUpon>Rpt_BuyReport_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptSaleBill.resx">
+      <DependentUpon>RptSaleBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptSaleBill_1.resx">
+      <DependentUpon>RptSaleBill_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptBuyBill_1.resx">
+      <DependentUpon>RptBuyBill_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_BuyReport_2.resx">
+      <DependentUpon>Rpt_BuyReport_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_BuyWeightBalance.resx">
+      <DependentUpon>Rpt_BuyWeightBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_SaleReport_1.resx">
+      <DependentUpon>Rpt_SaleReport_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_SaleReport_2.resx">
+      <DependentUpon>Rpt_SaleReport_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_SaleWeightBalance.resx">
+      <DependentUpon>Rpt_SaleWeightBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\subRptWeightBalance.resx">
+      <DependentUpon>subRptWeightBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FrmAdjustOutStandingBalance.resx">
+      <DependentUpon>FrmAdjustOutStandingBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FrmClearData.resx">
+      <DependentUpon>FrmClearData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FrmGetBuyData.resx">
+      <DependentUpon>FrmGetBuyData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FrmOptions.resx">
+      <DependentUpon>FrmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FrmTerminal.resx">
+      <DependentUpon>FrmTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FrmTools.resx">
+      <DependentUpon>FrmTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Data\RubberSoft.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RubberSoft.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Data\RubberSoft.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>RubberSoft.Context.cs</LastGenOutput>
+      <DependentUpon>RubberSoft.edmx</DependentUpon>
+    </None>
+    <None Include="Data\RubberSoft.edmx.diagram">
+      <DependentUpon>RubberSoft.edmx</DependentUpon>
+    </None>
+    <None Include="Data\RubberSoft.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RubberSoft.edmx</DependentUpon>
+      <LastGenOutput>RubberSoft.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Report\Data\dtBuyBill.xsc">
+      <DependentUpon>dtBuyBill.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Data\dtBuyBill.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtBuyBill.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\Data\dtBuyBill.xss">
+      <DependentUpon>dtBuyBill.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Data\dtSale.xsc">
+      <DependentUpon>dtSale.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Data\dtSale.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtSale.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\Data\dtSale.xss">
+      <DependentUpon>dtSale.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Data\dtWeightBalance.xsc">
+      <DependentUpon>dtWeightBalance.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Data\dtWeightBalance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtWeightBalance.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\Data\dtWeightBalance.xss">
+      <DependentUpon>dtWeightBalance.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\logo-social.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_account.ico" />
+    <Content Include="icons8_eraser.ico" />
+    <None Include="Resources\NoImage.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
